@@ -44,9 +44,9 @@
         decoration: none;
     }
 
-    .nav-link:hover {
-        color: #FFFFFF;
-        background-color: #1E90FF;
+    a.nav-link:hover {
+        color: #1E90FF;
+        /* background-color: #1E90FF; */
     }
 
     .nav-link:visited {
@@ -91,7 +91,9 @@
     #u13_div {
         width: 192px;
         height: 739px;
-        background-color: rgba(145, 0, 18, 0.6431372549019608);
+        /* background-color: rgba(145, 0, 18, 0.6431372549019608); */
+        background-color: #001233;
+
     }
 
     .form-row {
@@ -107,7 +109,7 @@
 
 
         height: 192px;
-        background-color: rgba(170, 170, 170, 0.9921568627450981);
+        /* background-color: rgba(170, 170, 170, 0.9921568627450981); */
 
     }
 
@@ -144,7 +146,8 @@
         height: 30px;
         padding: 2px 24px;
         text-align: center;
-        background-color: rgba(145, 0, 18, 0.6431372549019608);
+        /* background-color: rgba(145, 0, 18, 0.6431372549019608); */
+        background-color: #023e8a;
     }
 
     #text {
@@ -156,13 +159,16 @@
         position: absolute;
         width: 410px;
         height: 37px;
-        background-color: rgba(159, 32, 48, 0.9);
+        /* background-color: rgba(159, 32, 48, 0.9); */
+        background-color: #001233;
+
+
 
 
     }
 
     #u27_text {
-        font-weight: 600;
+        font-weight: lighter;
         font-style: normal;
         color: #FFFFFF;
         letter-spacing: 0.6px;
@@ -173,12 +179,13 @@
     .u12_div {
         width: 130px;
         height: 39px;
-        background-color: rgba(230, 115, 198, 0.6274509803921569);
+        /* background-color: rgba(230, 115, 198, 0.6274509803921569); */
+        background-color: #023e8a;
         border-color: rgba(255, 255, 255, 1);
-        font-weight: 600;
+        font-weight: lighter;
         font-style: normal;
         font-size: 16px;
-        color: #555555;
+        color: #FFFFFF;
         text-align: left;
         padding: 7px;
         margin-bottom: 3px;
@@ -188,12 +195,13 @@
     .u13_div {
         width: 280px;
         height: 39px;
-        background-color: rgba(230, 115, 198, 0.34509803921568627);
+        /* background-color: rgba(230, 115, 198, 0.34509803921568627); */
+        background-color: #caf0f8;
         border-color: rgba(255, 255, 255, 1);
-        font-weight: 600;
+        font-weight: lighter;
         font-style: normal;
         font-size: 16px;
-        color: #555555;
+        color: #000000;
         text-align: left;
         padding: 7px;
         margin-bottom: 3px;
@@ -318,15 +326,15 @@
                         <div id="u12-1_div" class="u12_div">
                             <p><span>ชื่อ</span></p>
                         </div>
-                        <div id="u12-1_div" class="u12_div">
+                        <!-- <div id="u12-1_div" class="u12_div">
                             <p><span>นามสกุล</span></p>
-                        </div>
+                        </div> -->
                         <div id="u12-1_div" class="u12_div">
-                            <p><span>ชื่ออังกฤษ</span></p>
+                            <p><span>ชื่อภาษาอังกฤษ</span></p>
                         </div>
-                        <div id="u12-1_div" class="u12_div">
+                        <!-- <div id="u12-1_div" class="u12_div">
                             <p><span>นามสกุลอังกฤษ</span></p>
-                        </div>
+                        </div> -->
                         <div id="u12-1_div" class="u12_div">
                             <p><span>คณะ</span></p>
                         </div>
@@ -391,16 +399,12 @@
                             <p><span><?php echo  $session->get('id_cardnumber'); ?></span></p>
                         </div>
                         <div id="u12-1_div" class="u13_div">
-                            <p><span><?php echo  $session->get('FName'); ?></span></p>
+                            <p><span><?php echo  $session->get('name_prefix')." ".$session->get('FName')." ".$session->get('LName'); ?></span>
+                            </p>
                         </div>
                         <div id="u12-1_div" class="u13_div">
-                            <p><span><?php echo  $session->get('LName'); ?></span></p>
-                        </div>
-                        <div id="u12-1_div" class="u13_div">
-                            <p><span><?php echo  $session->get('FName_eng'); ?></span></p>
-                        </div>
-                        <div id="u12-1_div" class="u13_div">
-                            <p><span><?php echo  $session->get('LName_eng'); ?></span></p>
+                            <p><span><?php echo  $session->get('FName_eng')." ".$session->get('LName_eng'); ?></span>
+                            </p>
                         </div>
                         <div id="u12-1_div" class="u13_div">
                             <p><span><?php echo  $session->get('faculty'); ?></span></p>
@@ -451,7 +455,7 @@
                             <p><span><?php echo  $session->get('Province'); ?></span></p>
                         </div>
                         <div id="u12-1_div" class="u13_div">
-                            <p><span><?php echo  $session->get('phone_number'); ?></span></p>
+                            <p><span>0<?php echo  $session->get('phone_number'); ?></span></p>
                         </div>
 
 

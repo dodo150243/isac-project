@@ -1,17 +1,17 @@
 <?php
 namespace App\Controllers;
-use App\Models\StudentModel;
+use App\Models\UserModel;
 use CodeIgniter\Controller;
 
 class StudentCrud extends Controller {
     // show names list
     public function index() {
-        $StudentModel = new StudentModel();
+        $UserModel = new UserModel();
 
         // โชว์ All จาก id 
-        $data['users'] = $StudentModel->orderBy('first_year', 'ASC')->findAll();
+        $data['users'] = $UserModel->orderBy('first_year', 'ASC')->findAll();
 
-        // $data['users'] = $StudentModel->fetch_data();
+        // $data['users'] = $UserModel->fetch_data();
         return view('seach_page', $data);
     }
 
@@ -33,7 +33,7 @@ class StudentCrud extends Controller {
 
     // add data 
     public function store() {
-        $StudentModel = new StudentModel();
+        $UserModel = new UserModel();
         $data = [
             'stu_id' => $this->request->getVar('stu_id'),	
             'password' => $this->request->getVar('password'),	
@@ -60,7 +60,7 @@ class StudentCrud extends Controller {
             'Zipcode' => $this->request->getVar('Zipcode'),
             'phone_number'=> $this->request->getVar('phone_number')
         ];
-        $StudentModel->insert($data);
+        $UserModel->insert($data);
         return $this->response->redirect(site_url('/seach_page'));
     }
 
