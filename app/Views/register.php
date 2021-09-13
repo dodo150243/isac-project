@@ -129,7 +129,6 @@
         border-bottom: 1px;
         font-size: 15px;
         font-weight: 700;
-
         margin-bottom: 2px;
         display: block;
         padding-left: 10px;
@@ -141,6 +140,9 @@
 
     #text0 {
         padding-left: 20px;
+    }
+    #faculty{
+        width: 200px;
     }
     </style>
 
@@ -181,8 +183,7 @@
                 <div class="form-row">
                     <div class="form-group">
                         <label for="name" style="width: 61px;">คำนำหน้า</label>
-                        <select class="select" id="name_prefix" name="name_prefix">//aria-label="Default select
-                            example">
+                        <select class="select" id="name_prefix" name="name_prefix">
                             <option selected>&nbsp;&nbsp;&nbsp;&nbsp;</option>
                             <option value="นาย">นาย</option>
                             <option value="น.ส.">น.ส.</option>
@@ -249,8 +250,14 @@
 
                 <div class="form-row">
                     <div class="form-group" id="regis0">
-                        <label for="name">คณะ</label>
-                        <input type="text" name="faculty" id="faculty" required="" value="<?= set_value('faculty'); ?>">
+                        <label for="faculty">คณะ</label>
+                        <select  class="select" id="faculty" name="faculty">
+                            <option selected>&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <option value="นาย">นาย</option>
+                            <option value="น.ส.">น.ส.</option>
+                            <option value="นาง">นาง</option>
+                        </select>
+                        <!-- <input type="text" name="faculty" id="faculty" required="" value="<?//= set_value('faculty'); ?>"> -->
                     </div>
 
                     <div class="form-group">

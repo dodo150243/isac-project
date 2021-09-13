@@ -129,6 +129,7 @@
                 </button>
             </div>
         </nav>
+        <h1>ควยตู่</h1>
 
         <img id="u0_img" class="img " src="http://127.0.0.1:32767/21.31.35/images/home/u0.png">
 
