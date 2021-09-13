@@ -425,7 +425,7 @@
 
 
                         <div id="u12-1_div" class="u13_div" style="margin-top:38px;">
-                            <p><span><?php echo  $session->get('d_m_y_birth'); ?></span></p>
+                            <p><span><?php echo  $session->get(DATE_FORMAT('d_m_y_birth')); ?></span></p>
                         </div>
                         <div id="u12-1_div" class="u13_div">
                             <p><span><?php echo  $session->get('province_birth'); ?></span></p>

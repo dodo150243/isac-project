@@ -141,7 +141,9 @@
     #text0 {
         padding-left: 20px;
     }
-    #faculty ,#edu_level{
+
+    #faculty,
+    #edu_level {
         width: 200px;
     }
     </style>
@@ -251,7 +253,7 @@
                 <div class="form-row">
                     <div class="form-group" id="regis0">
                         <label for="faculty">คณะ</label>
-                        <select  class="select" id="faculty" name="faculty">
+                        <select class="select" id="faculty" name="faculty">
                             <option selected>&nbsp;&nbsp;&nbsp;&nbsp;</option>
                             <option value="คณะวิทยาศาสตร์และเทคโนโลยี">คณะวิทยาศาสตร์และเทคโนโลยี</option>
                             <option value="คณะมนุษยศาสตร์และสังคมศาสตร์">คณะมนุษยศาสตร์และสังคมศาสตร์</option>
@@ -286,10 +288,10 @@
                 <div class="form-row">
                     <div class="form-group" id="regis0">
                         <label for="name">วุฒิการศึกษาสูงสุด</label>
-                        <select  class="select" id="edu_level" name="edu_level">
+                        <select class="select" id="edu_level" name="edu_level">
                             <option selected>&nbsp;&nbsp;&nbsp;&nbsp;</option>
-                            <option value="ประถมศึกษา">ประถมศึกษา</option>
-                            <option value="มัธยมศึกษาหรือเทียบเท่า">มัธยมศึกษา หรือ เทียบเท่า</option>
+                            <!-- <option value="ประถมศึกษา">ประถมศึกษา</option>
+                            <option value="มัธยมศึกษาหรือเทียบเท่า">มัธยมศึกษา หรือ เทียบเท่า</option> -->
                             <option value="ปริญญาตรี หรือเทียบเท่า">ปริญญาตรี หรือ เทียบเท่า</option>
                             <option value="ปริญญาโท">ปริญญาโท</option>
                             <option value="สูงกว่าปริญญาโท">สูงกว่าปริญญาโท</option>
