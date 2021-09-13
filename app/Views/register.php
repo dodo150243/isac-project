@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register 03</title>
+    <title>Register</title>
     <!-- Boostrap -->
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -141,7 +141,7 @@
     #text0 {
         padding-left: 20px;
     }
-    #faculty{
+    #faculty ,#edu_level{
         width: 200px;
     }
     </style>
@@ -286,8 +286,16 @@
                 <div class="form-row">
                     <div class="form-group" id="regis0">
                         <label for="name">วุฒิการศึกษาสูงสุด</label>
-                        <input type="text" name="edu_level" id="edu_level" required=""
-                            value="<?= set_value('edu_level'); ?>">
+                        <select  class="select" id="edu_level" name="edu_level">
+                            <option selected>&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <option value="ประถมศึกษา">ประถมศึกษา</option>
+                            <option value="มัธยมศึกษาหรือเทียบเท่า">มัธยมศึกษาหรือเทียบเท่า</option>
+                            <option value="ปริญญาตรี หรือเทียบเท่า">ปริญญาตรี หรือเทียบเท่า</option>
+                            <option value="ปริญญาโท">ปริญญาโท</option>
+                            <option value="สูงกว่าปริญญาโท">สูงกว่าปริญญาโท</option>
+                        </select>
+                        <!-- <input type="text" name="edu_level" id="edu_level" required=""
+                            value="<?//= set_value('edu_level'); ?>"> -->
                     </div>
                 </div>
 
