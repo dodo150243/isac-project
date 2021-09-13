@@ -129,7 +129,7 @@
                 </button>
             </div>
         </nav>
-        <img id="u0_img" class="img " src="http://127.0.0.1:32767/21.31.35/images/home/u0.png">
+        <img id="u0_img" class="img " src="/img/home.jfif">
 
         <a href="/register">
             <div style="left: 440px; cursor: pointer;" id="u3" class="ax_default button">
