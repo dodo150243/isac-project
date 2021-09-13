@@ -1,4 +1,6 @@
-<?php $session = session(); ?>
+<?php 
+date_default_timezone_set('Asia/Bangkok');
+$session = session(); ?>
 
 
 <!DOCTYPE html>
@@ -418,15 +420,23 @@
                         <div id="u12-1_div" class="u13_div">
                             <p><span><?php echo  $session->get('edu_level'); ?></span></p>
                         </div>
+
+
                         <div id="u12-1_div" class="u13_div">
                             <p><span><?php echo  $session->get('first_year'); ?></span></p>
                         </div>
 
-
-
                         <div id="u12-1_div" class="u13_div" style="margin-top:38px;">
-                            <p><span><?php echo  $session->get(DATE_FORMAT('d_m_y_birth')); ?></span></p>
+                            <p><span>
+                                    <?php 
+                        $date = $session->get('d_m_y_birth');
+                        $dm = 'd/m/';
+                        $year=(date("Y")+543);
+                        echo date($dm.$year,strtotime($date));
+                        ?>
+                                </span></p>
                         </div>
+
                         <div id="u12-1_div" class="u13_div">
                             <p><span><?php echo  $session->get('province_birth'); ?></span></p>
                         </div>
