@@ -289,8 +289,8 @@
                         <select  class="select" id="edu_level" name="edu_level">
                             <option selected>&nbsp;&nbsp;&nbsp;&nbsp;</option>
                             <option value="ประถมศึกษา">ประถมศึกษา</option>
-                            <option value="มัธยมศึกษาหรือเทียบเท่า">มัธยมศึกษาหรือเทียบเท่า</option>
-                            <option value="ปริญญาตรี หรือเทียบเท่า">ปริญญาตรี หรือเทียบเท่า</option>
+                            <option value="มัธยมศึกษาหรือเทียบเท่า">มัธยมศึกษา หรือ เทียบเท่า</option>
+                            <option value="ปริญญาตรี หรือเทียบเท่า">ปริญญาตรี หรือ เทียบเท่า</option>
                             <option value="ปริญญาโท">ปริญญาโท</option>
                             <option value="สูงกว่าปริญญาโท">สูงกว่าปริญญาโท</option>
                         </select>
