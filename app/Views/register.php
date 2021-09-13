@@ -253,9 +253,11 @@
                         <label for="faculty">คณะ</label>
                         <select  class="select" id="faculty" name="faculty">
                             <option selected>&nbsp;&nbsp;&nbsp;&nbsp;</option>
-                            <option value="นาย">นาย</option>
-                            <option value="น.ส.">น.ส.</option>
-                            <option value="นาง">นาง</option>
+                            <option value="คณะวิทยาศาสตร์และเทคโนโลยี">คณะวิทยาศาสตร์และเทคโนโลยี</option>
+                            <option value="คณะมนุษยศาสตร์และสังคมศาสตร์">คณะมนุษยศาสตร์และสังคมศาสตร์</option>
+                            <option value="คณะครุศาสตร์">คณะครุศาสตร์</option>
+                            <option value="คณะวิทยาการจัดการ">คณะวิทยาการจัดการ</option>
+                            <option value="คณะพยาบาลศาสตร์">คณะพยาบาลศาสตร์</option>
                         </select>
                         <!-- <input type="text" name="faculty" id="faculty" required="" value="<?//= set_value('faculty'); ?>"> -->
                     </div>
