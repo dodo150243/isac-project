@@ -214,16 +214,23 @@ $session = session(); ?>
         display: flex;
         background-color: rgba(230, 115, 198, 0.34509803921568627);
     }
+
     #u235 {
-            border-width: 0px;
-            position: absolute;
-            top: 130px;
-            display: flex;
-            font-family: 'Roboto Bold', 'Roboto Regular', 'Roboto', sans-serif;
-            font-weight: 700;
-            font-style: normal;
-            font-size: 15px;
-        }
+        border-width: 0px;
+        position: absolute;
+        top: 130px;
+        display: flex;
+        font-family: 'Roboto Bold', 'Roboto Regular', 'Roboto', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 15px;
+    }
+
+    footer,
+    #footer_link {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
     </style>
 
 </head>
@@ -243,16 +250,16 @@ $session = session(); ?>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="/seach_page" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="/seach_page_index" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 ค้นหาข้อมูลศิษย์เก่า
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/seach_page">จากชื่อ</a></li>
-                                <li><a class="dropdown-item" href="/seach_page">จากปีแรกเข้า</a></li>
-                                <li><a class="dropdown-item" href="/seach_page">จากจังหวัด</a></li>
-                                <li><a class="dropdown-item" href="/seach_page">จากหมู่เรียน</a></li>
-                                <li><a class="dropdown-item" href="/seach_page">จากรหัสนักศึกษา</a></li>
+                                <li><a class="dropdown-item" href="/seach_page_index">จากชื่อ</a></li>
+                                <li><a class="dropdown-item" href="/seach_page_index">จากปีแรกเข้า</a></li>
+                                <li><a class="dropdown-item" href="/seach_page_index">จากจังหวัด</a></li>
+                                <li><a class="dropdown-item" href="/seach_page_index">จากหมู่เรียน</a></li>
+                                <li><a class="dropdown-item" href="/seach_page_index">จากรหัสนักศึกษา</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -272,12 +279,15 @@ $session = session(); ?>
 
         <div id="u0_div" class="container">
 
-        <a style="color:black" href="/index"> <div id="u235" class="ax_default label" style="cursor: pointer;">
-                <div id="u235_text" class="text ">
-                    <p><span><&nbsp;back</span></p>
+            <a style="color:black" href="/index">
+                <div id="u235" class="ax_default label" style="cursor: pointer;">
+                    <div id="u235_text" class="text ">
+                        <p><span>
+                                <&nbsp;back< /span>
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
 
             <form action="">
                 <div id="u1_text">
@@ -507,7 +517,14 @@ $session = session(); ?>
             </form>
 
         </div>
-
+        <footer class="bg-dark text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center p-3">
+                © 2020 Copyright:
+                <a class="text" href="#" id="footer_link">ISAC.org</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
     </div>
 
 </body>

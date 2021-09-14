@@ -115,6 +115,12 @@
     a:hover {
         color: darkgray;
     }
+
+    footer,
+    #footer_link {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
     </style>
 
 
@@ -151,7 +157,7 @@
         </nav> -->
         <nav class="navbar navbar-expand-lg bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">ISAC</a>
+                <a class="navbar-brand" href="/home">ISAC</a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
@@ -239,11 +245,11 @@
         </div>
     </div>
     <br>
-    <footer class="bg-light text-center text-lg-start">
+    <footer class="bg-dark text-center text-lg-start">
         <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <div class="text-center p-3">
             © 2020 Copyright:
-            <a class="text-dark" href="#">ISAC.org</a>
+            <a class="text" href="#" id="footer_link">ISAC.org</a>
         </div>
         <!-- Copyright -->
     </footer>

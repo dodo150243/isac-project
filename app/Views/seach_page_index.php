@@ -1,3 +1,4 @@
+<?php $session = session();?>
 <!doctype html>
 <html lang="en">
 
@@ -196,6 +197,12 @@
         text-align: center;
         vertical-align: middle;
     }
+
+    footer,
+    #footer_link {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
     </style>
     <title>Search Page</title>
 </head>
@@ -225,7 +232,7 @@
                 </li>
 
             </ul>
-            <a class="nav-link" href="">USER</a>
+            <a class="nav-link" href="/profile"><?php echo $session->get('FName_eng'); ?></a>
         </div>
     </div>
 </nav>
@@ -387,8 +394,17 @@
 
 
 
-<!-- </div> -->
+</div>
 <!-- container -->
+<!-- <br> -->
+<footer class="bg-dark text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3">
+        © 2020 Copyright:
+        <a class="text" href="#" id="footer_link">ISAC.org</a>
+    </div>
+    <!-- Copyright -->
+</footer>
 </body>
 
 </html>

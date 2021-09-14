@@ -137,16 +137,23 @@
     #text0 {
         padding-left: 20px;
     }
+
     #u235 {
-            border-width: 0px;
-            position: absolute;
-            top: 155px;
-            display: flex;
-            font-family: 'Roboto Bold', 'Roboto Regular', 'Roboto', sans-serif;
-            font-weight: 700;
-            font-style: normal;
-            font-size: 15px;
-        }
+        border-width: 0px;
+        position: absolute;
+        top: 155px;
+        display: flex;
+        font-family: 'Roboto Bold', 'Roboto Regular', 'Roboto', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 15px;
+    }
+
+    footer,
+    #footer_link {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
     </style>
 
 
@@ -159,12 +166,29 @@
         <!-- Tag Header -->
         <nav class="navbar navbar-expand-lg bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" id="text0" href="/home">ISAC</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <a class="navbar-brand" href="/home">ISAC</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/seach_page" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                ค้นหาข้อมูลศิษย์เก่า
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/seach_page">จากชื่อ</a></li>
+                                <li><a class="dropdown-item" href="/seach_page">จากปีแรกเข้า</a></li>
+                                <li><a class="dropdown-item" href="/seach_page">จากจังหวัด</a></li>
+                                <li><a class="dropdown-item" href="/seach_page">จากหมู่เรียน</a></li>
+                                <li><a class="dropdown-item" href="/seach_page">จากรหัสนักศึกษา</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="/profile">ข้อมูลส่วนตัว</a>
+                        </li> -->
+
+                    </ul>
+                    <!-- <a class="nav-link" href="">USER</a> -->
+                </div>
             </div>
         </nav>
 
@@ -175,11 +199,14 @@
 
         <div id="u0_div" class="container">
 
-        <a style="color:black" href="/home"><div id="u235" class="ax_default label" style="cursor: pointer;">
-                <div id="u235_text" class="text ">
-                    <p><span><&nbsp;back</span></p>
+            <a style="color:black" href="/home">
+                <div id="u235" class="ax_default label" style="cursor: pointer;">
+                    <div id="u235_text" class="text ">
+                        <p><span>
+                                <&nbsp;back </span>
+                        </p>
+                    </div>
                 </div>
-            </div>
             </a>
 
             <div id="u1">
@@ -222,7 +249,15 @@
 
 
         </div>
-
+        <br>
+        <footer class="bg-dark text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center p-3">
+                © 2020 Copyright:
+                <a class="text" href="#" id="footer_link">ISAC.org</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
 
 
 

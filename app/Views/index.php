@@ -110,6 +110,13 @@
         font-size: 72px;
         color: #FFFFFF;
     }
+
+
+    footer,
+    #footer_link {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
     </style>
 
 </head>
@@ -129,16 +136,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="/seach_page" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="/seach_page_index" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 ค้นหาข้อมูลศิษย์เก่า
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/seach_page">จากชื่อ</a></li>
-                                <li><a class="dropdown-item" href="/seach_page">จากปีแรกเข้า</a></li>
-                                <li><a class="dropdown-item" href="/seach_page">จากจังหวัด</a></li>
-                                <li><a class="dropdown-item" href="/seach_page">จากหมู่เรียน</a></li>
-                                <li><a class="dropdown-item" href="/seach_page">จากรหัสนักศึกษา</a></li>
+                                <li><a class="dropdown-item" href="/seach_page_index">จากชื่อ</a></li>
+                                <li><a class="dropdown-item" href="/seach_page_index">จากปีแรกเข้า</a></li>
+                                <li><a class="dropdown-item" href="/seach_page_index">จากจังหวัด</a></li>
+                                <li><a class="dropdown-item" href="/seach_page_index">จากหมู่เรียน</a></li>
+                                <li><a class="dropdown-item" href="/seach_page_index">จากรหัสนักศึกษา</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -194,11 +201,11 @@
 
         </div>
         <br>
-        <footer class="bg-light text-center text-lg-start">
+        <footer class="bg-dark text-center text-lg-start">
             <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <div class="text-center p-3">
                 © 2020 Copyright:
-                <a class="text-dark" href="#">ISAC.org</a>
+                <a class="text" href="#" id="footer_link">ISAC.org</a>
             </div>
             <!-- Copyright -->
         </footer>

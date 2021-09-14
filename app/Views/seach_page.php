@@ -197,6 +197,12 @@
         text-align: center;
         vertical-align: middle;
     }
+
+    footer,
+    #footer_link {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
     </style>
     <title>Search Page</title>
 </head>
@@ -221,12 +227,12 @@
                         <li><a class="dropdown-item" href="/seach_page">จากรหัสนักศึกษา</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="/profile">ข้อมูลส่วนตัว</a>
-                </li>
+                </li> -->
 
             </ul>
-            <a class="nav-link" href="">USER</a>
+            <a class="nav-link" href="/home">USER</a>
         </div>
     </div>
 </nav>
@@ -388,8 +394,17 @@
 
 
 
-<!-- </div> -->
+</div>
 <!-- container -->
+<!-- <br> -->
+<footer class="bg-dark text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3">
+        © 2020 Copyright:
+        <a class="text" href="#" id="footer_link">ISAC.org</a>
+    </div>
+    <!-- Copyright -->
+</footer>
 </body>
 
 </html>

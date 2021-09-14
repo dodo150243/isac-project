@@ -37,6 +37,7 @@ $routes->get('/', 'Seachdata::seach');
 
 // add these CRUD Routes
 $routes->get('seach_page', 'StudentCrud::index');
+$routes->get('seach_page_index', 'StudentCrud_index::index');
 $routes->get('addname', 'StudentCrud::create');
 $routes->post('submit-form', 'StudentCrud::store');
 $routes->get('editnames/(:num)', 'StudentCrud::singleUser/$1');
