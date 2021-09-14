@@ -267,12 +267,11 @@ $session = session(); ?>
                         </li>
 
                     </ul>
-                    <a class="nav-link" href="/profile">
-                        <p><span><?php echo  $session->get('FName_eng'); ?></span></p>
-                    </a>
+                    <a class="nav-link" href="/profile"><?php echo $session->get('FName_eng'); ?></a>
                 </div>
             </div>
         </nav>
+        <br>
 
 
 
@@ -282,8 +281,9 @@ $session = session(); ?>
             <a style="color:black" href="/index">
                 <div id="u235" class="ax_default label" style="cursor: pointer;">
                     <div id="u235_text" class="text ">
+                        <br>
                         <p><span>
-                                <&nbsp;back< /span>
+                                <&nbsp;back </span>
                         </p>
                     </div>
                 </div>
@@ -525,6 +525,7 @@ $session = session(); ?>
             </div>
             <!-- Copyright -->
         </footer>
+
     </div>
 
 </body>
