@@ -122,6 +122,16 @@
         #bt-home{
             padding: 100px;
         }
+        #carouselExampleCaptions{
+            padding: auto;
+        }
+        .carousel{
+            padding: 10px 0;
+        }
+        .w-100 {
+    width: 100%!important;
+    height: auto;
+}
     </style>
 
 
@@ -182,8 +192,10 @@
                 </div>
             </div>
         </nav>
-        <div>
+
+        <div >
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+           
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -192,6 +204,7 @@
 
                 <div class="carousel-inner">
 
+                
                     <div class="carousel-item active">
                         <img src="/img/home.jpg" class="d-block w-100" alt="home">
                     </div>
@@ -202,9 +215,12 @@
                         <img src="/img/home3.jpg" class="d-block w-100" alt="home3">
                     </div>
 
-                    <div id="bt-home">
-                        <a href="/register">
-                            <div style="left: 0; cursor: pointer;" id="u3" class="ax_default button">
+                   
+                    
+
+                </div>
+                <a href="/register">
+                            <div style="left: 450px; top:340px; cursor: pointer;" id="u3" class="ax_default button">
                                 <div id="u3_div" class="" tabindex="0">
 
                                     <div id="u3_text" class="text " style="padding-left: 44px;">
@@ -216,7 +232,7 @@
                         </a>
 
                         <a href="/login">
-                            <div style="right: 0px; cursor: pointer;" id="u3" class="ax_default button">
+                            <div style="left: 680px; top:340px; cursor: pointer;" id="u3" class="ax_default button">
                                 <div id="u3_div" class="" tabindex="0">
 
                                     <div id="u3_text" class="text " style="padding-left: 36px;">
@@ -226,9 +242,6 @@
 
                             </div>
                         </a>
-                    </div>
-
-                </div>
 
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -239,6 +252,10 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+
+            
+                
+               
 
             <!-- <div class="content">
             
