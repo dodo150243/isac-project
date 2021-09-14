@@ -146,6 +146,16 @@
     #edu_level {
         width: 200px;
     }
+    #u235 {
+            border-width: 0px;
+            position: absolute;
+            top: 130px;
+            display: flex;
+            font-family: 'Roboto Bold', 'Roboto Regular', 'Roboto', sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 15px;
+        }
     </style>
 
 
@@ -178,6 +188,13 @@
             <!--------------------------------------(ข้อมูลนักศึกษา)------------------------------------------------------>
 
             <form action="/register/save" method="post" class="register-form">
+
+            <a style="color:black" href="/home"> <div id="u235" class="ax_default label" style="cursor: pointer;">
+                <div id="u235_text" class="text ">
+                    <p><span><&nbsp;back</span></p>
+                </div>
+            </div>
+        </a>
                 <!-- <div id="hr">ข้อมูลนักศึกษา</div> -->
                 <div id="u1_text">
                     <p><span>ลงทะเบียน</span></p>

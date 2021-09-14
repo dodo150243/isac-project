@@ -92,7 +92,7 @@ $session = session(); ?>
 
     #u13_div {
         width: 192px;
-        height: 739px;
+        height: 865px;
         /* background-color: rgba(145, 0, 18, 0.6431372549019608); */
         background-color: #001233;
 
@@ -214,6 +214,16 @@ $session = session(); ?>
         display: flex;
         background-color: rgba(230, 115, 198, 0.34509803921568627);
     }
+    #u235 {
+            border-width: 0px;
+            position: absolute;
+            top: 130px;
+            display: flex;
+            font-family: 'Roboto Bold', 'Roboto Regular', 'Roboto', sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 15px;
+        }
     </style>
 
 </head>
@@ -261,6 +271,13 @@ $session = session(); ?>
 
 
         <div id="u0_div" class="container">
+
+        <a style="color:black" href="/index"> <div id="u235" class="ax_default label" style="cursor: pointer;">
+                <div id="u235_text" class="text ">
+                    <p><span><&nbsp;back</span></p>
+                </div>
+            </div>
+        </a>
 
             <form action="">
                 <div id="u1_text">

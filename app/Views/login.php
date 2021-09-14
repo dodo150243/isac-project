@@ -137,6 +137,16 @@
     #text0 {
         padding-left: 20px;
     }
+    #u235 {
+            border-width: 0px;
+            position: absolute;
+            top: 155px;
+            display: flex;
+            font-family: 'Roboto Bold', 'Roboto Regular', 'Roboto', sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 15px;
+        }
     </style>
 
 
@@ -164,6 +174,14 @@
         <?php endif; ?>
 
         <div id="u0_div" class="container">
+
+        <a style="color:black" href="/home"><div id="u235" class="ax_default label" style="cursor: pointer;">
+                <div id="u235_text" class="text ">
+                    <p><span><&nbsp;back</span></p>
+                </div>
+            </div>
+            </a>
+
             <div id="u1">
                 <p id="u1_text"><span>เข้าสู่ระบบ</span></p>
                 <p><span>ไม่มีบัญชี?<a href="/register">ลงทะเบียน</a></span></p>
