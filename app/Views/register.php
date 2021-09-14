@@ -82,11 +82,15 @@
 
     label {
         font-size: 14px;
-        font-weight: 700;
+        font-weight: 600;
         font-style: inherit;
 
         margin-bottom: 2px;
         display: block;
+    }
+
+    input {
+        font-weight: 300;
     }
 
     .form-row {
@@ -163,6 +167,12 @@
         color: #FFFFFF;
         text-decoration: none;
     }
+
+    #backto {
+        font-family: 'Kanit', sans-serif;
+        font-weight: 300;
+
+    }
     </style>
 
 
@@ -216,7 +226,7 @@
                 <a style="color:black" href="/home">
                     <div id="u235" class="ax_default label" style="cursor: pointer;">
                         <div id="u235_text" class="text ">
-                            <p><span>
+                            <p id="backto"><span>
                                     <&nbsp;back </span>
                             </p>
                         </div>
@@ -224,7 +234,7 @@
                 </a>
                 <!-- <div id="hr">ข้อมูลนักศึกษา</div> -->
                 <div id="u1_text">
-                    <p><span>ลงทะเบียน</span></p>
+                    <p><span>ลงทะเบียนศิษย์เก่า</span></p>
                 </div>
                 <hr>
                 <div id="hr">ข้อมูลนักศึกษา</div>

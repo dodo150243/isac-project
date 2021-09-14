@@ -46,9 +46,9 @@ $session = session(); ?>
         decoration: none;
     }
 
-    a.nav-link:hover {
-        color: #1E90FF;
-        /* background-color: #1E90FF; */
+    .nav-link:hover {
+        color: #FFFFFF;
+        background-color: #1E90FF;
     }
 
     .nav-link:visited {
