@@ -182,6 +182,9 @@
                 <div id="u1_text">
                     <p><span>ลงทะเบียน</span></p>
                 </div>
+                <hr>
+                <div id="hr">ข้อมูลนักศึกษา</div>
+
                 <div class="form-row">
                     <div class="form-group">
                         <label for="name" style="width: 61px;">คำนำหน้า</label>
@@ -240,6 +243,8 @@
 
                 <hr>
                 <div id="hr">ข้อมูลส่วนตัว</div>
+
+
 
 
                 <div class="form-row">
@@ -394,7 +399,15 @@
             </form>
 
         </div>
-
+        <br>
+        <footer class="bg-light text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2020 Copyright:
+                <a class="text-dark" href="#">ISAC.org</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
     </div>
 
 

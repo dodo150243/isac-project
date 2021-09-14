@@ -126,14 +126,54 @@
     <div id="container">
 
         <!-- Tag Header -->
-        <nav class="navbar navbar-expand-lg bg-dark">
+        <!-- <nav class="navbar navbar-expand-lg bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" id="text0" href="/home">ISAC</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/seach_page" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        ค้นหาข้อมูลศิษย์เก่า
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/seach_page">จากชื่อ</a></li>
+                        <li><a class="dropdown-item" href="/seach_page">จากปีแรกเข้า</a></li>
+                        <li><a class="dropdown-item" href="/seach_page">จากจังหวัด</a></li>
+                        <li><a class="dropdown-item" href="/seach_page">จากหมู่เรียน</a></li>
+                        <li><a class="dropdown-item" href="/seach_page">จากรหัสนักศึกษา</a></li>
+                    </ul>
+                </li>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+            </div>
+        </nav> -->
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">ISAC</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/seach_page" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                ค้นหาข้อมูลศิษย์เก่า
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/seach_page">จากชื่อ</a></li>
+                                <li><a class="dropdown-item" href="/seach_page">จากปีแรกเข้า</a></li>
+                                <li><a class="dropdown-item" href="/seach_page">จากจังหวัด</a></li>
+                                <li><a class="dropdown-item" href="/seach_page">จากหมู่เรียน</a></li>
+                                <li><a class="dropdown-item" href="/seach_page">จากรหัสนักศึกษา</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="/profile">ข้อมูลส่วนตัว</a>
+                        </li> -->
+
+                    </ul>
+                    <!-- <a class="nav-link" href="">USER</a> -->
+                </div>
             </div>
         </nav>
         <br>
@@ -173,7 +213,7 @@
             </div>
 
             <a href="/register">
-                <div style="left: 500px; cursor: pointer;" id="u3" class="ax_default button">
+                <div style="left: 630px; cursor: pointer;" id="u3" class="ax_default button">
                     <div id="u3_div" class="" tabindex="0">
 
                         <div id="u3_text" class="text " style="padding-left: 44px;">
@@ -185,7 +225,7 @@
             </a>
 
             <a href="/login">
-                <div style="left: 800px; cursor: pointer;" id="u3" class="ax_default button">
+                <div style="left: 1000px; cursor: pointer;" id="u3" class="ax_default button">
                     <div id="u3_div" class="" tabindex="0">
 
                         <div id="u3_text" class="text " style="padding-left: 36px;">
