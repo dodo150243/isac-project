@@ -71,9 +71,11 @@ $data = [
     'phone_number' =>$this->request->getVar('phone_number'),
 ];
 
+
     $model->save($data);
     return redirect()->to('/login');
-
+    
+    
 }else{
     $data['validation'] = $this->validator;
     echo view('register', $data);
