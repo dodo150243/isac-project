@@ -154,6 +154,12 @@
         color: #FFFFFF;
         text-decoration: none;
     }
+
+    #backto {
+        font-family: 'Kanit', sans-serif;
+        font-weight: 300;
+
+    }
     </style>
 
 
@@ -202,7 +208,7 @@
             <a style="color:black" href="/home">
                 <div id="u235" class="ax_default label" style="cursor: pointer;">
                     <div id="u235_text" class="text ">
-                        <p><span>
+                        <p id="backto"><span>
                                 <&nbsp;back </span>
                         </p>
                     </div>
