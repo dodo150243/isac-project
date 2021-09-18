@@ -14,8 +14,8 @@ public function seach() {
         return view('seach_page', $data);
     }
     // if(isset($_POST["submit"])){
-    //     echo ('<h1>มาวะ</h1>');
+    //     echo ('<h1>มาวะ</h1>');      
     // }
-}
+}   หน้าค้นหาภูมิทำ
 
 ?>

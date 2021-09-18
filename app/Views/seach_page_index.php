@@ -1,6 +1,6 @@
 <?php $session = session();?>
 <!doctype html>
-<html lang="en">
+<html lang="en">  
 
 <head>
     <meta charset="UTF-8">
@@ -330,7 +330,7 @@
                                 <th>ปีการศึกษาแรกเข้า</th>
                                 <th>จังหวัด</th>
                             </tr>
-                        </thead>
+                        </thead> 
                         <tbody>
                             <?php if($users): ?>
                             <?php foreach($users as $row): ?>
