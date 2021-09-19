@@ -6,7 +6,7 @@ class Address extends Model {
     protected $table = 'tbl_address';
     // protected $primaryKey = 'stu_id';
     protected $allowedFields = [
-        'numhome_b' ,
+        'numhome_b',
         'village_b',
         'sub_distric_b',
         'district_b',
@@ -17,6 +17,6 @@ class Address extends Model {
         'sub_district_c',
         'district_c ',
         'province_c',
-        'zipcode_c'
+        'zipcode_c',
         ];
 }

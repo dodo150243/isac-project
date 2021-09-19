@@ -1,3 +1,7 @@
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);   ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,7 +35,7 @@
         #container {
             background-color: lightgray;
             width: 100%;
-            height: 2000px;
+            height: 2100px;
         }
 
         .navbar-brand {
@@ -282,7 +286,7 @@
                 <div class="form-row">
                     <div class="form-group" id="regis0">
                         <label for="faculty">คณะ</label>
-                        <select class="select" id="faculty" name="faculty">
+                        <select class="select" id="faculty" name="faculty" required="">
                             <option selected>&nbsp;&nbsp;&nbsp;&nbsp;</option>
                             <option value="คณะวิทยาศาสตร์และเทคโนโลยี">คณะวิทยาศาสตร์และเทคโนโลยี</option>
                             <option value="คณะมนุษยศาสตร์และสังคมศาสตร์">คณะมนุษยศาสตร์และสังคมศาสตร์</option>
@@ -296,18 +300,22 @@
 
                     <div class="form-group">
                         <label for="name">สาขา</label>
-                        <input type="text" name="section_name" id="section_name" required="" value="<?= set_value('section_name'); ?>">
+                        <input type="text" name="major" id="major" required="" value="<?= set_value('major'); ?>">
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group" id="regis0">
                         <label for="name">หมู่เรียน</label>
-                        <input type="text" name="section_num" id="section_num" required="" value="<?= set_value('section_num'); ?>">
+                        <input type="text" name="section" id="section" required="" value="<?= set_value('section'); ?>">
                     </div>
                     <div class="form-group">
                         <label for="name">ปีที่เข้าศึกษา</label>
-                        <input type="text" name="first_year" id="first_year" required="" value="<?= set_value('first_year'); ?>">
+                        <input style="width: 98px;" type="text" name="year_first" id="year_first" required="" value="<?= set_value('year_first'); ?>">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">ปีที่จบศึกษา</label>
+                        <input style="width: 98px;" type="text" name="year_finish" id="year_finish" required="" value="<?= set_value('year_finish'); ?>">
                     </div>
                 </div>
 
@@ -315,7 +323,7 @@
                 <div class="form-row">
                     <div class="form-group" id="regis0">
                         <label for="name">วุฒิการศึกษาสูงสุด</label>
-                        <select class="select" id="edu_level" name="edu_level">
+                        <select style="width: 200px;" class="select" id="education_level" name="education_level">
                             <option selected>&nbsp;&nbsp;&nbsp;&nbsp;</option>
                             <!-- <option value="ประถมศึกษา">ประถมศึกษา</option>
                             <option value="มัธยมศึกษาหรือเทียบเท่า">มัธยมศึกษา หรือ เทียบเท่า</option> -->
@@ -323,9 +331,6 @@
                             <option value="ปริญญาโท">ปริญญาโท</option>
                             <option value="สูงกว่าปริญญาโท">สูงกว่าปริญญาโท</option>
                         </select>
-                        <!-- <input type="text" name="edu_level" id="edu_level" required=""
-                            value="<? //= set_value('edu_level'); 
-                                    ?>"> -->
                     </div>
                 </div>
 
@@ -370,23 +375,23 @@
                     </div>
                     <div class="form-group">
                         <label for="name">ชื่อ</label>
-                        <input type="text" name="FName" id="FName" required="" value="<?= set_value('FName'); ?>">
+                        <input type="text" name="alumni_fname" id="alumni_fname" required="" value="<?= set_value('alumni_fname'); ?>">
                     </div>
                     <div class="form-group">
                         <label for="father_name">นามสกุล</label>
-                        <input type="text" name="LName" id="LName" required="" value="<?= set_value('lName'); ?>">
+                        <input type="text" name="alumni_lname" id="alumni_lname" required="" value="<?= set_value('alumni_lname'); ?>">
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group" id="regis0">
                         <label for="FnEng">ชื่อ(อังกฤษตัวใหญ่)</label>
-                        <input type="text" name="FName_eng" id="FName_eng" required="" value="<?= set_value('FName_eng'); ?>" onkeyup="upperCharacter()">
+                        <input type="text" name="alumni_fname_eng" id="alumni_fname_eng" required="" value="<?= set_value('alumni_fname_eng'); ?>" onkeyup="upperCharacter()">
                     </div>
 
                     <div class="form-group">
                         <label for="LnEng">นามสกุล(อังกฤษตัวใหญ่)</label>
-                        <input type="text" name="LName_eng" id="LName_eng" required="" value="<?= set_value('LName_eng'); ?>" onkeyup="upperCharacter()">
+                        <input type="text" name="alumni_lname_eng" id="alumni_lname_eng" required="" value="<?= set_value('alumni_lname_eng'); ?>" onkeyup="upperCharacter()">
                     </div>
                 </div>
 
@@ -397,7 +402,7 @@
 
                     <div class="form-group" id="regis0">
                         <label for="FnEng">เลขบัตรประชาชน</label>
-                        <input type="text" name="id_cardnumber" id="id_cardnumber" required="">
+                        <input type="text" name="alumni_code" id="alumni_code" required="" value="<?= set_value('alumni_code'); ?>">
                     </div>
 
                     <div style="display:flex; padding-left: 13px;">
@@ -458,33 +463,50 @@
                         <input type="text" name="phone_number" id="phone_number" required="" value="<?= set_value('phone_number'); ?>">
                     </div>
                 </div>
+                <div class="form-row">
+                    <div class="form-group" id="regis0">
+                        <label for="name">Facebook</label>
+                        <input type="text" name="facebook" id="facebook" required="" value="<?= set_value('facebook'); ?>">
+                    </div>
+                    <div class="form-group" >
+                        <label for="name">Line</label>
+                        <input type="text" name="line" id="line" required="" value="<?= set_value('line'); ?>">
+                    </div>
+                </div>
 
-                <hr>
+
+ <!-- --------------------------------------------(ที่อยู่)---------------------------------------------------------------------------- -->
+
+                 <hr>
                 <div id="hr">ที่อยู่ภูมิลำเนา</div>
 
                 <div class="form-row">
-                    <div class="form-group" id="regis0">
-                        <label for="name">ที่อยู่</label>
-                        <input style="width: 98px;" type="text" name="Address" id="Address" required="" value="<?= set_value('Address'); ?>">
+                <div class="form-group" id="regis0">
+                        <label for="name">บ้านเลที่</label>
+                        <input style="width: 98px;" type="text" name="numhome_b" id="numhome_b" required="" value="<?= set_value('numhome_b'); ?>">
+                    </div>
+                    <div class="form-group" >
+                        <label for="name">หมู่</label>
+                        <input style="width: 98px;" type="text" name="village_b" id="village_b" required="" value="<?= set_value('village_b'); ?>">
                     </div>
                     <div class="form-group">
                         <label for="name">ตำบล</label>
-                        <input style="width: 98px;" type="text" name="SubDistrict" id="SubDistrict" required="" value="<?= set_value('SubDistrict'); ?>">
+                        <input style="width: 98px;" type="text" name="sub_distric_b" id="sub_distric_b" required="" value="<?= set_value('sub_distric_b'); ?>">
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group" id="regis0">
                         <label for="name">อำเภอ</label>
-                        <input style="width: 98px;" type="text" name="District" id="District" required="" value="<?= set_value('District'); ?>">
+                        <input style="width: 98px;" type="text" name="district_b" id="district_b" required="" value="<?= set_value('district_b'); ?>">
                     </div>
                     <div class="form-group">
                         <label for="name">จังหวัด</label>
-                        <input style="width: 98px;" type="text" name="Province" id="Province" required="" value="<?= set_value('Province'); ?>">
+                        <input style="width: 98px;" type="text" name="province_b" id="province_b" required="" value="<?= set_value('province_b'); ?>">
                     </div>
                     <div class="form-group">
                         <label for="name">รหัสไปรษณีย์</label>
-                        <input style="width: 98px;" type="text" name="Zipcode" id="Zipcode" required="" value="<?= set_value('Zipcode'); ?>">
+                        <input style="width: 98px;" type="text" name="zipcode_b" id="zipcode_b" required="" value="<?= set_value('zipcode_b'); ?>">
                     </div>
                 </div>
 
@@ -495,27 +517,31 @@
                 <div id="hr">ที่อยู่ปัจจุบัน</div>
                 <div class="form-row">
                     <div class="form-group" id="regis0">
-                        <label for="name">ที่อยู่</label>
-                        <input style="width: 98px;" type="text" name="Address" id="Address" required="" value="<?= set_value('Address'); ?>">
+                        <label for="name">บ้านเลที่</label>
+                        <input style="width: 98px;" type="text" name="numhome_c" id="numhome_c" required="" value="<?= set_value('numhome_c'); ?>">
+                    </div>
+                    <div class="form-group" >
+                        <label for="name">หมู่</label>
+                        <input style="width: 98px;" type="text" name="village_c" id="village_c" required="" value="<?= set_value('village_c'); ?>">
                     </div>
                     <div class="form-group">
                         <label for="name">ตำบล</label>
-                        <input style="width: 98px;" type="text" name="SubDistrict" id="SubDistrict" required="" value="<?= set_value('SubDistrict'); ?>">
+                        <input style="width: 98px;" type="text" name="sub_district_c" id="sub_district_c" required="" value="<?= set_value('sub_district_c'); ?>">
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group" id="regis0">
                         <label for="name">อำเภอ</label>
-                        <input style="width: 98px;" type="text" name="District" id="District" required="" value="<?= set_value('District'); ?>">
+                        <input style="width: 98px;" type="text" name="district_c" id="district_c" required="" value="<?= set_value('district_c'); ?>">
                     </div>
                     <div class="form-group">
                         <label for="name">จังหวัด</label>
-                        <input style="width: 98px;" type="text" name="Province" id="Province" required="" value="<?= set_value('Province'); ?>">
+                        <input style="width: 98px;" type="text" name="province_c" id="province_c" required="" value="<?= set_value('province_c'); ?>">
                     </div>
                     <div class="form-group">
                         <label for="name">รหัสไปรษณีย์</label>
-                        <input style="width: 98px;" type="text" name="Zipcode" id="Zipcode" required="" value="<?= set_value('Zipcode'); ?>">
+                        <input style="width: 98px;" type="text" name="zipcode_c" id="zipcode_c" required="" value="<?= set_value('zipcode_c'); ?>">
                     </div>
                 </div>
                 
@@ -527,7 +553,7 @@
                 <div class="form-row">
                     <div class="form-group" id="regis0">
                         <label for="name" ">อาชีพปัจจุบัน</label>
-                        <select style=" width: 200px;" class="select" name="blood_type" id="blood_type">//aria-label="Default select example">
+                        <select style=" width: 200px;" class="select" name="occupation" id="occupation">//aria-label="Default select example">
                             <option selected>&nbsp;&nbsp;&nbsp;</option>
                             <option value="รับจ้าง/อาชีพอิสระ">รับจ้าง/อาชีพอิสระ</option>
                             <option value="ธุรกิจส่วนตัว">ธุรกิจส่วนตัว</option>
@@ -537,21 +563,21 @@
                             <option value="อื่นๆ">อื่นๆ</option>
                             </select>
                     </div>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <label for="name">อาชีพอื่นๆ ระบุ</label>
-                        <input type="text" name="province_birth" id="province_birth" required="" value="<?= set_value('province_birth'); ?>">
-                    </div>
+                        <input type="text" name="occupation" id="occupation">
+                    </div> -->
                 </div>
 
                 <div class="form-row">
 
                     <div class="form-group" id="regis0">
                         <label for="FnEng">บริษัท/องค์กร</label>
-                        <input type="text" name="id_cardnumber" id="id_cardnumber" required="" value="<?= set_value('id_cardnumber'); ?>">
+                        <input type="text" name="company_name" id="company_name" required="" value="<?= set_value('company_name'); ?>">
                     </div>
                     <div class="form-group">
                         <label for="name">วันที่เริ่มทำงาน</label>
-                        <input style="width: 200px; height:30px" type="date" name="d_m_y_birth" id="d_m_y_birth" placeholder="" required="" value="<?= set_value('d_m_y_birth'); ?>">
+                        <input style="width: 200px; height:30px" type="date" name="start_date" id="start_date" placeholder="" required="" value="<?= set_value('start_date'); ?>">
                     </div>
                 </div>
 
@@ -565,7 +591,7 @@
                 <div class="form-row">
                     <div class="form-group" id="regis0">
                         <label for="FnEng">ช่องทางติดต่อ</label>
-                        <input type="text" name="id_cardnumber" id="id_cardnumber" required="" value="<?= set_value('id_cardnumber'); ?>">
+                        <input type="text" name="contact" id="contact" required="" value="<?= set_value('contact'); ?>">
                     </div>
                 </div>
 
@@ -594,8 +620,8 @@
     </script>
     <script>
         function upperCharacter() {
-            var x = document.getElementById("FName_eng");
-            var y = document.getElementById("LName_eng");
+            var x = document.getElementById("alumni_fname_eng");
+            var y = document.getElementById("alumni_lname_eng");
             x.value = x.value.toUpperCase();
             y.value = y.value.toUpperCase();
         }

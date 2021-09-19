@@ -2,8 +2,9 @@
 
 namespace App\Controllers;
 
+use App\Models\Alumni;
 use CodeIgniter\Controller;
-use App\Models\UserModel;
+
 
 class Login extends Controller
 {
@@ -17,7 +18,7 @@ class Login extends Controller
     public function auth()
     {
         $session = session();
-        $model = new UserModel();
+        $model = new Alumni();
         $stu_id = $this->request->getVar('stu_id');
         $password = $this->request->getVar('password');
         $data = $model->where('stu_id', $stu_id)->first();
